@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PictureQuiz</string>
+    <string name="Text_Quiz">\What kind of animal is this?</string>
+    <string name="Image_of_giraffe">\Picture</string>
+    <string name="Species_prompt">Species</string>
+    <string name="Confirm_text">Confirm</string>
+    <string name="giraffe">Giraffe</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Incorrect, the correct answer is Giraffe!</string>
+</resources>

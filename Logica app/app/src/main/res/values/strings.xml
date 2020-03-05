@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Logica app</string>
+    <string name="Title">Conjunction (AND)</string>
+    <string name="modeA">A</string>
+    <string name="modeB">B</string>
+    <string name="aBmode">A ^ B</string>
+    <string name="tfTrue">T</string>
+    <string name="tfFalse">F</string>
+    <string name="ifInput1"/>
+    <string name="ifInput2"/>
+    <string name="ifInput3"/>
+    <string name="ifInput4"/>
+    <string name="btnSubmit">Submit</string>
+    <string name="digTF">TFtf</string>
+    <string name="correct">The correct number of answers is: %d</string>
+
+
+</resources>
