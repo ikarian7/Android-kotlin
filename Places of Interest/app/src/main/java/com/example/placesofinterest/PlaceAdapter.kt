@@ -1,16 +1,13 @@
 package com.example.placesofinterest
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_place.view.*
 
-public class  PlaceAdapter(private val places: List<Place>) :
+public class PlaceAdapter(private val places: List<Place>) :
     RecyclerView.Adapter<PlaceAdapter.ViewHolder>() {
-
-    lateinit var context: Context
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
