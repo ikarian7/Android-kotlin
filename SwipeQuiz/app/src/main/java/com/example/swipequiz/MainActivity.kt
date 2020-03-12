@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        questions.add(Quiz("is Scott lief?"))
-        questions.add(Quiz("is Iris lief?"))
+//        questions.add(Quiz("is Scott lief?"))
+//        questions.add(Quiz("is Iris lief?"))
         initViews()
     }
 
@@ -29,6 +29,9 @@ class MainActivity : AppCompatActivity() {
         rvQuiz.adapter = QuizAdapter
         rvQuiz.addItemDecoration(DividerItemDecoration(this@MainActivity, DividerItemDecoration.VERTICAL))
         createItemTouchHelper().attachToRecyclerView(rvQuiz)
+        for (i in Quiz.QUIZ_QUESTIONS.indices) {
+            questions.add(Quiz(Quiz.QUIZ_QUESTIONS[i], Quiz.QUIZ_ANSWERS[i], Quiz.QUIZ_CORRECT[i] ))
+        }
     }
 
     private fun createItemTouchHelper(): ItemTouchHelper {
