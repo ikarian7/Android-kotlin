@@ -2,22 +2,16 @@ package com.example.swipequiz
 
 data class Quiz(
     var quizText: String,
-    var quizAnswer: String,
-    var quizCorrect: Boolean
+    var quizAnswer: String
 ){
-        companion object {
+    companion object {
             val QUIZ_QUESTIONS = arrayOf(
-                "Is Scott lief?",
-                "Is Iris lief?"
+                "Scott is lief",
+                "Iris is lief"
             )
             val QUIZ_ANSWERS = arrayOf(
-                "ja",
-                "nee"
-            )
-            val QUIZ_CORRECT = arrayOf(
-                true,
-                false
+                "True",
+                "False"
             )
         }
-
 }

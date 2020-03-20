@@ -3,7 +3,6 @@ package com.example.swipequiz
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.quiz_questions.view.*
@@ -11,14 +10,12 @@ import kotlinx.android.synthetic.main.quiz_questions.view.*
 
 class ReminderAdapter(private val questions: List<Quiz>) : RecyclerView.Adapter<ReminderAdapter.ViewHolder>() {
 
+
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(questions: Quiz){
             itemView.tvQuestions.text = questions.quizText
-
             itemView.setOnClickListener {
-                for (i in Quiz.QUIZ_QUESTIONS.indices) {
-                    Snackbar.make(it, Quiz.QUIZ_ANSWERS[i], Snackbar.LENGTH_LONG)
-                }
+                Snackbar.make(itemView,"Answer is " + questions.quizAnswer, Snackbar.LENGTH_LONG).show()
             }
         }
     }

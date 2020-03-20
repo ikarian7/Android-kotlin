@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Swipe Quiz</string>
+    <string name="app_name">Swipe Quiz Kotlin</string>
     <string name="Questions" />
     <string name="textQuestions" />
 </resources>
