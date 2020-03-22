@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">User Profile App</string>
+    <string name="app_title">User Profile</string>
+    <string name="image_splash_description">App logo</string>
+    <string name="open_gallery_button">Go to picture gallery</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_description">Description</string>
+    <string name="description_image_create_profile">Placeholder image create profile</string>
+    <string name="confirm_button">Confirm</string>
+    <string name="profile_image_description">Image of user profile</string>
+    <string name="name">%1$s %2$s</string>
+</resources>
