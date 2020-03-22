@@ -17,10 +17,12 @@ class SplashActivity : AppCompatActivity() {
                 Intent(
                     this@SplashActivity,
                     CreateProfileActivity::class.java
+
                 )
             )
             finish()
         }, 1000)
     }
 }
+
 
