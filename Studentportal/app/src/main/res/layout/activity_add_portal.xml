@@ -35,11 +35,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/url_hint"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:text="@string/website_prefix" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/buttonAddPortal"
+        android:id="@+id/btnAddPortal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/colorPrimaryDark"

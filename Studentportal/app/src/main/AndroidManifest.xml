@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AddPortalActivity">
+            android:name=".CreatePortalActivity">
         </activity>
     </application>
 

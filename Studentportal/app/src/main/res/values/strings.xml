@@ -5,4 +5,5 @@
     <string name="portal_create_top_bar">Create a Portal</string>
     <string name="url_hint">Url</string>
     <string name="button_add_portal">Add portal</string>
+    <string name="website_prefix">http://</string>
 </resources>
