@@ -31,8 +31,8 @@ class ScoreActivity : AppCompatActivity() {
     }
 
     private fun initViews(){
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = "Game History"
+       // supportActionBar?.setDisplayHomeAsUpEnabled(true)
+       // supportActionBar?.title = "Game History"
         rvScores.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
         rvScores.adapter = rpsAdapter
         rvScores.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
