@@ -17,6 +17,6 @@
     <string name="rockbtn">rockbtn</string>
     <string name="paperbtn">paperbtn</string>
     <string name="sciccorsbtn">sciccorsbtn</string>
-    <string name="title">Steen Papier Schaar</string>
+    <string name="title">Rock, Paper, Scissors</string>
     <string name="History">History</string>
 </resources>
