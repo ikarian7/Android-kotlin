@@ -12,8 +12,6 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.util.*
 
-const val HISTORY_REQUEST_CODE = 100
-
 class MainActivity : AppCompatActivity() {
 
     private val history = arrayListOf<RockPaperScissor>()
@@ -21,9 +19,6 @@ class MainActivity : AppCompatActivity() {
 
     private var computerChoice: Int = 0
     private var playerChoice: Int = 0
-    private var totalWinsComputer: Int = 0
-    private var totalWinsPlayer: Int = 0
-    private var totalDraws: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,7 +45,6 @@ class MainActivity : AppCompatActivity() {
                 computerChoice = computerChoice,
                 playerChoice = playerChoice,
                 date = Date().toString()
-
             )
             withContext(Dispatchers.IO){
                 rpsRepository.insertGame(rps)
@@ -114,7 +108,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun gotoHistory(){
         val intent = Intent(this,ScoreActivity::class.java)
-        startActivityForResult(intent, HISTORY_REQUEST_CODE)
+        startActivity(intent)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
