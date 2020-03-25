@@ -7,7 +7,6 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_create_profile.*
-import kotlinx.android.synthetic.main.activity_profile.*
 
 
 class CreateProfileActivity : AppCompatActivity() {
@@ -56,7 +55,7 @@ class CreateProfileActivity : AppCompatActivity() {
             when (requestCode) {
                 GALLERY_REQUEST_CODE -> {
                     profileImageUri = data?.data
-                    ivProfileImage.setImageURI(profileImageUri)
+                    ivPlaceHolder.setImageURI(profileImageUri)
                 }
             }
         }

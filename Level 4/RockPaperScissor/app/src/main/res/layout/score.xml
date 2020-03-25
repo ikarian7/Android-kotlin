@@ -39,7 +39,7 @@
         android:layout_marginTop="16dp"
         android:background="@color/colorPrimaryDark"
         android:contentDescription="@string/image_of_the_computers_turn"
-        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/tvVS2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDate"
         app:srcCompat="@drawable/rock" />
@@ -52,12 +52,12 @@
         android:background="@color/colorPrimaryDark"
         android:contentDescription="@string/image_of_the_players_turn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toEndOf="@+id/tvVS2"
         app:layout_constraintTop_toTopOf="@+id/ivComputerTurn"
         app:srcCompat="@drawable/scissors" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/tvVS2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -70,7 +70,7 @@
         app:layout_constraintTop_toTopOf="@+id/ivComputerTurn" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/tvCPU2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/computer"
@@ -81,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ivComputerTurn" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/tvPlayer2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/you"
