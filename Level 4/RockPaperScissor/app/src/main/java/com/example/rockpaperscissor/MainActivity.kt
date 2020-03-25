@@ -90,31 +90,24 @@ class MainActivity : AppCompatActivity() {
 
         if (computerMove == playerMove){
             tvResult.text = "Draw!"
-            totalDraws++
         }
         else if (computerMove == 1 && playerMove == 2){
             tvResult.text = "Computer Wins!"
-            totalWinsComputer++
         }
         else if (computerMove == 1 && playerMove == 3){
             tvResult.text = "You Win!"
-            totalWinsPlayer++
         }
         else if (computerMove == 2 && playerMove == 1){
             tvResult.text = "You Win!"
-            totalWinsPlayer++
         }
         else if (computerMove == 2 && playerMove == 3){
             tvResult.text = "Computer Wins!"
-            totalWinsComputer++
         }
         else if (computerMove == 3 && playerMove == 1){
             tvResult.text = "Computer Wins!"
-            totalWinsComputer++
         }
         else if (computerMove == 3 && playerMove == 2){
             tvResult.text = "You Win!"
-            totalWinsPlayer++
         }
         addGamesToDatabase()
     }
