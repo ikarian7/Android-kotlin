@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.lifecycle.LiveData
 import com.example.level5_task1_notepad.model.Note
 
-class NoteRepo(context: Context){
+class NoteRepository(context: Context){
     private val noteDao: NoteDao
 
     init {
